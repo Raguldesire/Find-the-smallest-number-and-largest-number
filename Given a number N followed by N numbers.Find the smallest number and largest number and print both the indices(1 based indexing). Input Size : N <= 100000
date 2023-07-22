@@ -1,0 +1,9 @@
+#step 1--Getting input from the user
+a=int(input())
+b=list(map(int,(input().split())))
+# create a dummy index  at base 0
+b.insert(0,min(b)+1) 
+c=min(b)
+d=max(b)
+e=b.index(c),b.index(d) #finding the index of max and min numbers
+print(*e)
